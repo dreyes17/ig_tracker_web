@@ -1,0 +1,71 @@
+
+body {
+  background: linear-gradient(60deg, rgba(193,24,91,0.6) 20%, rgba(90, 141, 200, 0.6) 80%);
+  background: -prefix-linear-gradient(60deg, rgba(193,24,91,0.6) 20%, rgba(90, 141, 200, 0.6) 80%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Rancho;
+}
+
+nav a.active{
+  border-bottom: 0.3vmax solid rgb(112, 110, 110);
+  transition: all ease 0.5s;
+}
+
+nav ul a{
+  color: black;
+  font-size: 3vmax;
+  padding-top: 3vh;
+}
+
+/*nav .brand-logo{
+  color: orange;
+  font-size: 4vw;
+}*/
+
+nav {
+  background: transparent;
+  padding-top: 3vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  height: 12vmax;
+}
+
+nav .brand-logo img {
+  height: 7vmax;
+  vertical-align: middle;
+  border-radius: 25%;
+}
+
+.css-text-901oao {
+  font-size: 6vmax;
+  font-family: Rancho;
+  vertical-align: middle;
+}
+
+.play-store{
+  position: relative;
+  padding-left: 46vw;
+  padding-top: 1vh;
+}
+
+.carousel .carousel-item>img {
+  width: 18vmax;
+  height: 32vmax;
+}
+
+.carousel .carousel-item {
+  padding-bottom: 70vh;
+  height: 40vmax;
+}
+
+.carousel {
+  height: 40vmax;
+  margin: 0 auto;
+  
+}
+
+.card-list{
+  margin: 0 auto;
+  width: 40vw;
+}
