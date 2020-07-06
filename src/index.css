@@ -18,54 +18,100 @@ nav ul a{
   padding-top: 3vh;
 }
 
-/*nav .brand-logo{
-  color: orange;
-  font-size: 4vw;
-}*/
-
 nav {
   background: transparent;
   padding-top: 3vh;
   padding-left: 5vw;
   padding-right: 5vw;
-  height: 12vmax;
+  height: 9vmax;
 }
 
 nav .brand-logo img {
-  height: 7vmax;
+  height: 6vmax;
   vertical-align: middle;
   border-radius: 25%;
 }
 
+nav .brand-logo {
+  width:55%;
+}
+
 .css-text-901oao {
-  font-size: 6vmax;
+  font-size: 5vmax;
   font-family: Rancho;
   vertical-align: middle;
 }
 
-.play-store{
-  position: relative;
-  padding-left: 46vw;
-  padding-top: 1vh;
-}
-
-.carousel .carousel-item>img {
-  width: 18vmax;
-  height: 32vmax;
+.materialboxed {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 1%;
 }
 
 .carousel .carousel-item {
-  padding-bottom: 70vh;
-  height: 40vmax;
+  height: 100%;
+  width: 250px;
+}
+
+.carousel .carousel-item img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .carousel {
-  height: 40vmax;
-  margin: 0 auto;
-  
+  height: 50vh;
+  width: 50vw;
 }
 
-.card-list{
-  margin: 0 auto;
-  width: 40vw;
+.tabs {
+  background-color:  transparent;
+  z-index: 0;
+}
+
+.tabs .tab a {
+  color: white;
+  font-size: large;
+  text-transform: none;
+  font-size: 1.5vmax;
+}
+
+.tabs .tab a {
+  color: white;
+  font-size: large;
+  text-transform: none;
+  font-size: 1.5vmax;
+}
+
+.tabs .tab a:hover {
+  color: white;
+  font-size: large;
+  text-transform: none;
+  font-size: 1.5vmax;
+}
+
+.tabs .tab a.active {
+  color: white;
+  font-size: large;
+  text-transform: none;
+  font-size: 1.5vmax;
+}
+
+.tabs .indicator {
+  background-color:rgb(112, 110, 110);;
+}
+
+.descriptionText h1 {
+  font-size: 5vmax;
+  color: white;
+}
+
+.descriptionText p {
+  font-size: 2vmax;
+  color: white;
+}
+
+.promotionTable p {
+  font-size: 1.5vmax;
+  font-weight: bold;
 }

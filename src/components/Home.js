@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import CaptureCard from './CaptureCard'
+import CapturesCarousel from './CapturesCarousel'
 import PlayStore from './PlayStore'
+import PromotionTable from './PromotionTable'
 
 class Home extends Component {
 
@@ -8,16 +9,15 @@ class Home extends Component {
     
     return (
       <div>
-        <div>
-          <PlayStore />
+        <div className="row">
+          <div className="container center">
+              <PlayStore />
+          </div>
         </div>
-        <div className="card-list">
-          
-          <CaptureCard />
+        <CapturesCarousel />
+        <PromotionTable />
       </div>
-      </div>
-      
-    )
+    );
   }
 }
 
