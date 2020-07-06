@@ -22,8 +22,12 @@ class CapturesCarousel extends Component {
 
   _onTabChange(e) {
     var carousel = document.querySelectorAll('.carousel');
-    var carousel_instance = M.Carousel.getInstance(carousel[0]);
-  
+    if(this.el.id === "mobile-tabs") {
+      var carousel_instance= M.Carousel.getInstance(carousel[1]);
+    } else {
+      var carousel_instance = M.Carousel.getInstance(carousel[0]);
+    }
+
     var carousel_center = null;
     var i = 0;
     carousel_instance.images.forEach(element => {
@@ -40,7 +44,15 @@ class CapturesCarousel extends Component {
 
   _onCarouselChange(e) {
     var tabs = document.querySelectorAll('.tabs');
-    var tab_instance = M.Tabs.getInstance(tabs[0]);
+    console.log(this.el.id);
+    console.log(tabs);
+    if(this.el.id === "mobile-carousel") {
+      var tab_instance= M.Tabs.getInstance(tabs[1]);
+    } else {
+      var tab_instance = M.Tabs.getInstance(tabs[0]);
+    }
+    if (tab_instance != null)
+      console.log(tab_instance.el.id);
     var carousel_center = null;
     var i = 0;
     this.images.forEach(element => {
@@ -51,40 +63,67 @@ class CapturesCarousel extends Component {
       i += 1
     });
     if (tab_instance != null && tab_instance.index !== carousel_center) {
-      tab_instance.select((carousel_center + 1).toString());
+      if(this.el.id === "mobile-carousel") {
+        tab_instance.select("mob-"+(carousel_center + 1).toString());
+      } else {
+        tab_instance.select((carousel_center + 1).toString());
+      }
     }
   }
 
   render() {
       return (
-        <div className="row z-depth-1">
-          <div className="col s5 offset-s1">
-            <ul id="tabs-swipe-demo" className="tabs tabs-fixed-width tab-demo">
-                <li className="tab col s4"><a className="active waves-effect" href="#1">IG Tracker</a></li>
-                <li className="tab col s4"><a className="waves-effect" href="#2">Monitoriza Seguidores</a></li>
-                <li className="tab col s4"><a className="waves-effect" href="#3">Sé Anónimo</a></li>
-            </ul>
-            <div id="1" className="col s12"><DescriptionText title={TITULO_PRESENTACION} desc={DESC_PRESENTACION} /></div>
-            <div id="2" className="col s12"><DescriptionText title={TITULO_MONITORIZA} desc={DESC_MONITORIZA} /></div>
-            <div id="3" className="col s12"><DescriptionText title={TITULO_ANONIMO} desc={DESC_ANONIMO} /></div>
-          </div>
-          <div className="col s6">
-            <div className="carousel">
-              <a className="carousel-item" href="#one!"><img className="materialboxed z-depth-3" src={Card1} alt=""/></a>
-              <a className="carousel-item" href="#two!"><img className="materialboxed z-depth-3" src={Card2} alt=""/></a>
-              <a className="carousel-item" href="#three!"><img className="materialboxed z-depth-3" src={Card3} alt=""/></a>
-              <a className="carousel-item" href="#four!"><img className="materialboxed z-depth-3" src={Card4} alt=""/></a>
-              <a className="carousel-item" href="#five!"><img className="materialboxed z-depth-3" src={Card5} alt=""/></a>
+        <>
+          <div className="capturesCarousel row hide-on-med-and-down show-on-large">
+            <div className="col s5 offset-s1">
+              <ul className="tabs tabs-fixed-width tab-demo">
+                  <li className="tab col s4"><a className="active waves-effect" href="#1"><i className="small material-icons">home</i></a></li>
+                  <li className="tab col s4"><a className="waves-effect" href="#2"><i className="small material-icons">search</i></a></li>
+                  <li className="tab col s4"><a className="waves-effect" href="#3"><i className="small material-icons">lock</i></a></li>
+              </ul>
+              <div id="1" className="col s12"><DescriptionText title={TITULO_PRESENTACION} desc={DESC_PRESENTACION} /></div>
+              <div id="2" className="col s12"><DescriptionText title={TITULO_MONITORIZA} desc={DESC_MONITORIZA} /></div>
+              <div id="3" className="col s12"><DescriptionText title={TITULO_ANONIMO} desc={DESC_ANONIMO} /></div>
+            </div>
+            <div className="col s6">
+              <div className="carousel">
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card1} alt=""/></a>
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card2} alt=""/></a>
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card3} alt=""/></a>
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card4} alt=""/></a>
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card5} alt=""/></a>
+              </div>
             </div>
           </div>
-        </div>
+          <div className="capturesCarousel row show-on-medium-and-down hide-on-large-only">
+            <div className="col s12">
+              <div id="mobile-carousel" className="carousel">
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card1} alt=""/></a>
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card2} alt=""/></a>
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card3} alt=""/></a>
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card4} alt=""/></a>
+                <a className="carousel-item" href="#!"><img className="materialboxed z-depth-3" src={Card5} alt=""/></a>
+              </div>
+            </div>
+            <div className="col s11 offset-s1">
+              <ul id="mobile-tabs" className="tabs tabs-fixed-width tab-demo">
+                  <li className="tab col s4"><a className="active waves-effect" href="#mob-1"><i className="small material-icons">home</i></a></li>
+                  <li className="tab col s4"><a className="waves-effect" href="#mob-2"><i className="small material-icons">search</i></a></li>
+                  <li className="tab col s4"><a className="waves-effect" href="#mob-3"><i className="small material-icons">lock</i></a></li>
+              </ul>
+              <div id="mob-1" className="col s12"><DescriptionText title={TITULO_PRESENTACION} desc={DESC_PRESENTACION} /></div>
+              <div id="mob-2" className="col s12"><DescriptionText title={TITULO_MONITORIZA} desc={DESC_MONITORIZA} /></div>
+              <div id="mob-3" className="col s12"><DescriptionText title={TITULO_ANONIMO} desc={DESC_ANONIMO} /></div>
+            </div>
+          </div>
+        </>
       )
   }
 }
 
 export default CapturesCarousel
 
-const TITULO_PRESENTACION = "IG Tracker";
+const TITULO_PRESENTACION = "App para Instagram";
 const DESC_PRESENTACION = "Descubre la popularidad real de un perfil de Instagram y además ¡descárgate sus publicaciones!";
 
 const TITULO_ANONIMO = "Sé anónimo";

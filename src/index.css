@@ -13,7 +13,7 @@ nav a.active{
 }
 
 nav ul a{
-  color: black;
+  color: white;
   font-size: 3vmax;
   padding-top: 3vh;
 }
@@ -23,11 +23,11 @@ nav {
   padding-top: 3vh;
   padding-left: 5vw;
   padding-right: 5vw;
-  height: 9vmax;
+  height: 9.5vmax;
 }
 
 nav .brand-logo img {
-  height: 6vmax;
+  height: 5.5vmax;
   vertical-align: middle;
   border-radius: 25%;
 }
@@ -36,10 +36,19 @@ nav .brand-logo {
   width:55%;
 }
 
+.home {
+  padding-top: 1vmax;
+}
+
+.capturesCarousel {
+  height: 60vh;
+}
+
 .css-text-901oao {
   font-size: 5vmax;
   font-family: Rancho;
   vertical-align: middle;
+  color: white;
 }
 
 .materialboxed {
@@ -50,7 +59,7 @@ nav .brand-logo {
 
 .carousel .carousel-item {
   height: 100%;
-  width: 250px;
+  width: 28%;
 }
 
 .carousel .carousel-item img{
@@ -59,9 +68,33 @@ nav .brand-logo {
   transform: translate(-50%,-50%);
 }
 
-.carousel {
+.carousel{
   height: 50vh;
   width: 50vw;
+}
+
+#mobile-carousel{
+  height: 50vh;
+  width: 100vw;
+}
+
+#mobile-carousel .carousel-item {
+  height: 100%;
+  width: 50%;
+}
+
+#mobile-carousel .carousel-item img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#mobile-tabs {
+  padding-top: 2vh;
+}
+
+#mobile-nav {
+  height: 13vmax;
 }
 
 .tabs {
@@ -70,7 +103,7 @@ nav .brand-logo {
 }
 
 .tabs .tab a {
-  color: white;
+  /*color: white;*/
   font-size: large;
   text-transform: none;
   font-size: 1.5vmax;
@@ -84,7 +117,7 @@ nav .brand-logo {
 }
 
 .tabs .tab a:hover {
-  color: white;
+  color: black;
   font-size: large;
   text-transform: none;
   font-size: 1.5vmax;
@@ -98,20 +131,26 @@ nav .brand-logo {
 }
 
 .tabs .indicator {
-  background-color:rgb(112, 110, 110);;
+  background-color:rgb(112, 110, 110,0.6);
+}
+
+.descriptionText {
+  color:white;
 }
 
 .descriptionText h1 {
   font-size: 5vmax;
-  color: white;
 }
 
 .descriptionText p {
   font-size: 2vmax;
+}
+
+.promotionTable {
   color: white;
+  /*padding-top: 3vmax;*/
 }
 
 .promotionTable p {
   font-size: 1.5vmax;
-  font-weight: bold;
 }

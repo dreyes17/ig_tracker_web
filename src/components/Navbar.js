@@ -13,22 +13,18 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="nav-wrapper z-depth-1" >
-        <div>
-          <Link className="brand-logo" to="/"><img className="z-depth-4 hoverable" src={Icon} alt="Ig Tracker logo"/> <Text>  IG Tracker</Text> </Link>
-          <Link className="sidenav-trigger" data-target="mobile-links" to="">
-            <i className="large material-icons">menu</i>
-          </Link>
-          <ul className="right hide-on-med-and-down">
-            <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to='/about'>About</NavLink></li>
-          </ul>
-        </div>
-        <ul className="sidenav" id="mobile-links">
-          <li><NavLink exact to="/">Home</NavLink></li>
-          <li><NavLink to='/about'>About</NavLink></li>
-        </ul>
-      </nav> 
+      <>
+        <nav className="nav-wrapper z-depth-1 hide-on-med-and-down show-on-large" >
+          <div>
+            <Link className="brand-logo" to="/"><img className="z-depth-4 hoverable" src={Icon} alt="Ig Tracker logo"/> <Text>  IG Tracker</Text> </Link>
+          </div>
+        </nav> 
+        <nav id="mobile-nav" className="nav-wrapper z-depth-1 show-on-medium-and-down hide-on-large-only" >
+          <div>
+            <Link className="brand-logo cneter" to="/"><img className="z-depth-4 hoverable" src={Icon} alt="Ig Tracker logo"/> <Text>  IG Tracker</Text> </Link>
+          </div>
+        </nav>
+      </>
     )
   }
 }

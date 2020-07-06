@@ -8,12 +8,7 @@ class Home extends Component {
   render(){
     
     return (
-      <div>
-        <div className="row">
-          <div className="container center">
-              <PlayStore />
-          </div>
-        </div>
+      <div className="home">
         <CapturesCarousel />
         <PromotionTable />
       </div>
