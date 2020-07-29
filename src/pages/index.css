@@ -1,0 +1,157 @@
+
+body {
+  background: linear-gradient(60deg, rgba(193,24,91,0.6) 20%, rgba(90, 141, 200, 0.6) 80%);
+  background: -prefix-linear-gradient(60deg, rgba(193,24,91,0.6) 20%, rgba(90, 141, 200, 0.6) 80%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Rancho;
+}
+
+nav ul Text{
+  color: white;
+  font-size: 3vmax;
+  padding-top: 3vh;
+}
+
+nav {
+  background: transparent;
+  padding-top: 3vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  height: 9.5vmax;
+}
+
+nav .brand-logo img  {
+  height: 5.5vmax;
+  vertical-align: middle;
+  border-radius: 25%;
+}
+
+nav .brand-logo {
+  width:55%;
+}
+
+nav h1 {
+  font-size: 5vmax;
+  /*font-family: Rancho;*/
+  color: white;
+  margin-top: 0.7vmax;
+}
+
+.home {
+  padding-top: 1vmax;
+}
+
+.capturesCarousel {
+  height: 60vh;
+  z-index: 2;
+}
+
+.materialboxed {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 1%;
+}
+
+.carousel .carousel-item {
+  height: 100%;
+  width: 28%;
+}
+
+.carousel{
+  height: 50vh;
+  width: 50vw;
+}
+
+#mobile-carousel{
+  height: 50vh;
+  width: 100vw;
+}
+
+#mobile-carousel .carousel-item {
+  height: 100%;
+  width: 28vmax;
+}
+
+#mobile-tabs {
+  padding-top: 2vh;
+  
+}
+
+#mobile-nav {
+  height: 13vmax;
+}
+
+.tabs {
+  background-color:  transparent;
+  z-index: 0;
+}
+
+.tabs .tab a {
+  font-size: large;
+  text-transform: none;
+  font-size: 1.5vmax;
+}
+
+.tabs .tab a {
+  color: white;
+  font-size: large;
+  text-transform: none;
+  font-size: 1.5vmax;
+}
+
+.tabs .tab a:hover {
+  color: black;
+  font-size: large;
+  text-transform: none;
+  font-size: 1.5vmax;
+}
+
+.tabs .tab a.active {
+  color: white;
+  font-size: large;
+  text-transform: none;
+  font-size: 1.5vmax;
+}
+
+.tabs .indicator {
+  background-color:rgba(112, 110, 110,0.6);
+}
+
+.descriptionText {
+  color:white;
+}
+
+.descriptionText h1 {
+  font-size: 5vmax;
+}
+
+.descriptionText p {
+  font-size: 2vmax;
+}
+
+.promotionTable {
+  color: white;
+}
+
+.promotionTable p {
+  font-size: 1.7vmax;
+}
+
+.page-footer img {
+  height: 5.5vmax;
+  padding-top: 1vh;
+}
+
+.footer-copyright {
+  font-size: 1.3vmax;
+}
+
+.page-footer {
+  background-color: rgba(112, 110, 110,0.25);
+}
+
+.page-footer p {
+  font-size: 1.5vmax;
+  margin-block-start: 0.4vmax;
+}
