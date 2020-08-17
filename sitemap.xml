@@ -16,4 +16,15 @@
                 hreflang="en"
                 href="https://www.igtracker.app/"/>
     </url>
+    <url>
+        <loc>https://www.igtracker.app/</loc>
+        <xhtml:link 
+               rel="alternate"
+               hreflang="es"
+               href="https://www.igtracker.app/es/"/>
+        <xhtml:link 
+                rel="alternate"
+                hreflang="en"
+                href="https://www.igtracker.app/"/>
+    </url>
 </urlset>
