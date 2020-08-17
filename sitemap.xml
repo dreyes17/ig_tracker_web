@@ -6,22 +6,7 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
     xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
-        <loc>https://www.igtracker.app/es/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="es"
-               href="https://www.igtracker.app/es/"/>
-        <xhtml:link 
-                rel="alternate"
-                hreflang="en"
-                href="https://www.igtracker.app/"/>
-    </url>
-    <url>
         <loc>https://www.igtracker.app/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
         <xhtml:link 
                rel="alternate"
                hreflang="es"
