@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-3a4fe7b767812d9dbe0e.js"
+    "url": "webpack-runtime-5eee38fdac7ea99750b3.js"
   },
   {
     "url": "framework-85aff51d15c28c7fbe5f.js"
   },
   {
-    "url": "app-dafb35c09c2f9e9dc6a1.js"
+    "url": "app-205cedac7f82f9a7c7af.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "1caa8bc4e984f6157123fd106e1c9e21"
+    "revision": "98b4571f96c9d953b096addf4ceab21b"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-5a1ee105f05b3144b807.js"
@@ -48,14 +48,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "235f0de4de8d988067e69af743b4585c"
+    "revision": "c9ae161f7377de4c3b334d50c844e083"
   },
   {
     "url": "polyfill-19a11a2c8a0865319485.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "2429e80ab85f430ba624cc164462739e"
+    "revision": "d9ced5848a5f4ecce453664c3a0f8e92"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -143,12 +143,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/ig_tracker_web`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-dafb35c09c2f9e9dc6a1.js`))) {
+  if (!resources || !(await caches.match(`/ig_tracker_web/app-205cedac7f82f9a7c7af.js`))) {
     return await fetch(event.request)
   }
 
@@ -161,7 +161,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/ig_tracker_web/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
