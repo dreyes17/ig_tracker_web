@@ -7,9 +7,13 @@ const DescriptionText = (props) => {
     return (
         <I18nProvider locale={props.locale}>
             <div className="descriptionText caption center-align">
-                <h1>{translate(props.title)}</h1>
+                <h2>{translate(props.title)}</h2>
                 <p className="flow-text">{translate(props.desc)}</p>
-                <PlayStore />
+                <div className="row">
+                    <div className="col s12 center">
+                        <PlayStore />
+                    </div>
+                </div>
             </div>
         </I18nProvider>
         

@@ -1,16 +1,18 @@
 export default {
 
     /*FUNCTIONALITIES*/
-    'presentation-title': 'Instagram Stalker App',
-    'presentation-desc': 'Discover the real popularity of an Instagram Profile. Also download publications!',
+    'presentation-title': 'Instagram Influencer App',
+    'presentation-desc': 'Become an Instagram Marketer by learning from the popularity of other Instagram Profiles',
     'anonymous-title': 'Be Anonymous',
-    'anonymous-desc': 'We do not require your email or any password. You only have to download the app and start to use it. No one will know who you are.',
-    'track-title': 'Track Followers',
-    'track-desc': 'Be the first one in knowing which profile increases or decreases its followers. You can see the exact number of followers of a profile at any moment.',
-    'notify-title': 'Be Notified',
-    'notify-desc': 'The application will notify you of any followers and following sustantial change in any moment.',
-    'download-profile-title': 'Download Profile Pictures',
-    'download-profile-desc': 'You can see any profile picture big and download it if you want.',
+    'anonymous-desc': 'We do not require your email or any password. You only have to download the app and start to use it. No one will know neither who you are nor who you are tracking',
+    'track-title': 'Track Followers and Posts',
+    'track-desc': 'Check whether an Instagram Profile get or lose Followers. You can see the exact hour when a post was published and analyze which is the Best Time to Post on Instagram',
+    'display-content-title': 'Display Content',
+    'display-content-desc': 'View Instagram Posts without login and keep them in your device even if they have been deleted',
+    'notify-title': 'Track Profiles With No Effort',
+    'notify-desc': 'The application will notify you of any followers and following sustantial change of an Influencer and new Posts or IGTV of an Instagram User',
+    'download-title': 'Download Profile Picture and Posts',
+    'download-desc': 'View and Download Big Instagram Profile Pics and Photos',
 
     /*PROMOTIONAL TABLE*/
     'find-profiles': 'Find Profiles',
@@ -18,7 +20,7 @@ export default {
     'notify-changes': 'Notify Changes',
 
     /*CONTACT - FOOTER*/
-    'vacama-product': 'A product of Vacama Company',
+    'vacama-product': 'A product of VACAMA COMPANY',
     'contact': 'Contact',
     'follow-us': 'Follow Us!',
     'privacy-policy': 'Privacy Policy'

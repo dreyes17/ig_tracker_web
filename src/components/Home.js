@@ -10,6 +10,11 @@ class Home extends Component {
     return (
       <div className="home">
         <CapturesCarousel locale={this.props.locale}/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <PromotionTable locale={this.props.locale}/>
         <Footer locale={this.props.locale}/>
       </div>

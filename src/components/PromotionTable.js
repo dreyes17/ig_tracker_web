@@ -35,24 +35,24 @@ const PromotionTable = (props) => {
             </div>
             <div className="promotionTable row show-on-medium-and-down hide-on-large-only">
 
-                <div className="col s3 offset-s1 center-align">
+                <div className="col s4 center-align">
                     <div className="col s12">
                         <i className="medium material-icons center-align">account_circle</i>
                     </div>
-                    <div className="col s12">
+                    <div className="col s12 center">
                         <p>{translate('find-profiles')}</p>
                     </div>
                 </div>
-                <div className="col s3 offset-s1 center-align">
-                    <div className="col s12">
+                <div className="col s4 center-align">
+                    <div className="col s12 ">
                         <i className="medium material-icons">adb</i>
                     </div>
-                    <div className="col s12">
+                    <div className="col s12 center">
                         <p>{translate('available-android')}</p>
                     </div>
                 </div>
-                <div className="col s3 offset-s1 center-align">
-                    <div className="col s12">
+                <div className="col s4 center-align">
+                    <div className="col s12 center">
                         <i className="medium material-icons">notifications_active</i>
                     </div>
                     <div className="col s12">

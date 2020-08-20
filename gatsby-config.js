@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `IG Tracker App`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@vacamacompany`,
+    author: `Vacama Company`,
+    siteUrl: `https://www.igtracker.app`,
   },
+  //pathPrefix: "/ig_tracker_web",///ig_tracker_web para github pages y / para igtracker.app
   plugins: [
+    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,7 +33,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/assets/icon-transparent.png`, // This path is relative to the root of the site.
+        //icon: `src/assets/icon-transparent.ico`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

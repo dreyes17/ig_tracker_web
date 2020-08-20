@@ -1,4 +1,3 @@
-
 body {
   background: linear-gradient(60deg, rgba(193,24,91,0.6) 20%, rgba(90, 141, 200, 0.6) 80%);
   background: -prefix-linear-gradient(60deg, rgba(193,24,91,0.6) 20%, rgba(90, 141, 200, 0.6) 80%);
@@ -15,16 +14,16 @@ nav ul Text{
 
 nav {
   background: transparent;
-  padding-top: 3vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
   height: 9.5vmax;
+  padding-top: 2vh;
+  padding-left: 2vw;
 }
 
 nav .brand-logo img  {
-  height: 5.5vmax;
+  height: 6vmax;
   vertical-align: middle;
   border-radius: 25%;
+  
 }
 
 nav .brand-logo {
@@ -32,10 +31,14 @@ nav .brand-logo {
 }
 
 nav h1 {
-  font-size: 5vmax;
-  /*font-family: Rancho;*/
+  font-size: 4.8vmax;
   color: white;
-  margin-top: 0.7vmax;
+  margin-top: 1.3vh;
+}
+
+nav .row .col.s7 {
+  padding-right: 0;
+  padding-left: 4vw;
 }
 
 .home {
@@ -50,32 +53,42 @@ nav h1 {
 .materialboxed {
   max-width: 100%;
   max-height: 100%;
-  border-radius: 1%;
 }
 
 .carousel .carousel-item {
   height: 100%;
   width: 28%;
+  border-radius: 7%;
+}
+
+.carousel .carousel-item img{
+  border-radius: 7%;
 }
 
 .carousel{
   height: 50vh;
-  width: 50vw;
+  width: 48vw;
 }
 
 #mobile-carousel{
   height: 50vh;
-  width: 100vw;
+  width: 96vw;
+  overflow: hidden;
 }
 
 #mobile-carousel .carousel-item {
   height: 100%;
   width: 28vmax;
+  overflow: hidden;
 }
 
-#mobile-tabs {
+#mobile-descriptions {
   padding-top: 2vh;
-  
+  margin-left: auto;
+}
+
+#mobile-descriptions h2 {
+  margin-top: 2vh;
 }
 
 #mobile-nav {
@@ -122,12 +135,14 @@ nav h1 {
   color:white;
 }
 
-.descriptionText h1 {
-  font-size: 5vmax;
+.descriptionText h2 {
+  font-size: 4.5vmax;
 }
 
 .descriptionText p {
-  font-size: 2vmax;
+  font-size: 2.5vmax;
+  margin-block-start:1vh;
+  margin-block-end:1vh;
 }
 
 .promotionTable {
@@ -135,7 +150,7 @@ nav h1 {
 }
 
 .promotionTable p {
-  font-size: 1.7vmax;
+  font-size: 2vmax;
 }
 
 .page-footer img {
@@ -152,6 +167,12 @@ nav h1 {
 }
 
 .page-footer p {
-  font-size: 1.5vmax;
+  font-size: 2vmax;
   margin-block-start: 0.4vmax;
+  color: black;
+}
+
+.page-footer h4 {
+  font-size: 2.5vmax;
+  
 }

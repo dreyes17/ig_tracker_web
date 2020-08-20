@@ -8,7 +8,8 @@ const PlayStore = (props) => {
     function handleClick(e) {
         ReactGa.event({
             category: 'Button',
-            action: 'Click the Play Store Button'
+            action: 'Click the Play Store Button',
+            label: 'Play Store Button'
         })
     }
 
@@ -18,8 +19,9 @@ const PlayStore = (props) => {
               className="play-button"
               store="android"
               url={androidUrl}
-              linkStyles={{height: "7.5vmax", width: "20vmax", paddingRight: "2vmax"}}
-              linkProps={{ title: 'Play Store Button' }}
+              linkStyles={{height: "7.5vmax", width: "20vmax"}}
+              linkProps={{ title: 'Play Store Button', rel: "nofollow" }}
+              style={{width: "20vmax", height: "7.5vmax", display: "inline-block", marginTop: "0.7vh"}}
               onClick={handleClick}
             />
         </>
