@@ -6,25 +6,25 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
     xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
-        <loc>https://www.igtracker.app/</loc>
+        <loc>https://igtracker.app/</loc>
         <xhtml:link 
                rel="alternate"
                hreflang="es"
-               href="https://www.igtracker.app/es/"/>
+               href="https://igtracker.app/es/"/>
         <xhtml:link 
                 rel="alternate"
                 hreflang="en"
-                href="https://www.igtracker.app/"/>
+                href="https://igtracker.app/"/>
     </url>
     <url>
-        <loc>https://www.igtracker.app/es/</loc>
+        <loc>https://igtracker.app/es/</loc>
         <xhtml:link 
                rel="alternate"
                hreflang="es"
-               href="https://www.igtracker.app/es/"/>
+               href="https://igtracker.app/es/"/>
         <xhtml:link 
                 rel="alternate"
                 hreflang="en"
-                href="https://www.igtracker.app/"/>
+                href="https://igtracker.app/"/>
     </url>
 </urlset>
