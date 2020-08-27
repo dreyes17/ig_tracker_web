@@ -20,7 +20,7 @@ const PlayStore = (props) => {
               store="android"
               url={androidUrl}
               linkStyles={{height: "7.5vmax", width: "20vmax"}}
-              linkProps={{ title: 'Play Store Button', rel: "nofollow" }}
+              linkProps={{ title: 'Play Store Button', rel: "nofollow,noopener,noindex",SameSite:"Lax" }}
               style={{width: "20vmax", height: "7.5vmax", display: "inline-block", marginTop: "0.7vh"}}
               onClick={handleClick}
             />

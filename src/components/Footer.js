@@ -1,5 +1,5 @@
 import React from 'react';
-import Vakma from '../assets/vakma.png'
+import Vakma from '../assets/vakma.webp'
 import { SocialIcon } from 'react-social-icons'
 import { I18nProvider } from '../i18nProvider';
 import translate from '../i18nProvider/translate';
@@ -11,20 +11,20 @@ const Footer = (props) => {
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
-                <h4 className="black-text">{translate('vacama-product')}</h4>
+                <h3 className="black-text">{translate('vacama-product')}</h3>
                 <img src={Vakma} alt="Ig Tracker logo"/>
               </div>
               <div className="col l5 offset-l1  s12">
-                <h4 className="black-text">{translate('contact')}</h4>
+                <h3 className="black-text">{translate('contact')}</h3>
                 <div className="row hide-on-med-and-down show-on-large">
                   <div className="col s2" >
-                    <SocialIcon  url="https://www.instagram.com/vacamacompany/" rel="nofollow" network='instagram' bgColor="black" target="_blank" style={{ height: "3vmax", width: "3vmax"}}/>
+                    <SocialIcon  url="https://www.instagram.com/vacamacompany/" rel="nofollow,noreferrer" network='instagram' bgColor="black" target="_blank" style={{ height: "3vmax", width: "3vmax"}}/>
                   </div>
                   <div className="col s10">
                     <p id="footerContactDescription">{translate('follow-us')}</p>
                   </div>
                   <div className="col s2">
-                    <SocialIcon network='email' bgColor="#B91919" style={{ height: "3vmax", width: "3vmax" }}/>
+                    <SocialIcon url="" network='email' bgColor="#B91919" style={{ height: "3vmax", width: "3vmax" }}/>
                   </div>
                   <div className="col s10">
                     <p id="footerContactDescription">vacamacompany@gmail.com</p>
@@ -32,13 +32,13 @@ const Footer = (props) => {
                 </div>
                 <div className="row show-on-medium-and-down hide-on-large-only">
                   <div className="col s1" >
-                    <SocialIcon  url="https://www.instagram.com/vacamacompany/" rel="nofollow" network='instagram' bgColor="black" target="_blank" style={{ height: "3vmax", width: "3vmax" }}/>
+                    <SocialIcon  url="https://www.instagram.com/vacamacompany/" rel="nofollow,noreferrer" network='instagram' bgColor="black" target="_blank" style={{ height: "3vmax", width: "3vmax" }}/>
                   </div>
                   <div className="col s11">
                     <p id="footerContactDescription">{translate('follow-us')}</p>
                   </div>
                   <div className="col s1">
-                    <SocialIcon network='email' bgColor="#B91919" style={{ height: "3vmax", width: "3vmax" }}/>
+                    <SocialIcon url="" network='email' bgColor="#B91919" style={{ height: "3vmax", width: "3vmax" }}/>
                   </div>
                   <div className="col s11">
                     <p id="footerContactDescription">vacamacompany@gmail.com</p>

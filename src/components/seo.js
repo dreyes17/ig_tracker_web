@@ -14,16 +14,14 @@ const en_MetaData = {
   'title': 'IG Tracker | The App to track Instagram Profiles 📱😍✅',
   'description':'🥇 An app to analyze Instagram Profiles and Download Publications and Profile Photos without authentication.',
   'url':'https://igtracker.app/',
-  'highLightImage':'https://igtracker.app/static/HighlightDisplay-61cdb9f131978d58a9601f09012a2cbd.png',
-  'keywords':'ig tracker,instagram tracker,instagram followers app,instagram posts download,post,download,instagram profile,instagram photo,instagram picture,unfollow,app,instagram,ig,tracker'
+  'highLightImage':'https://igtracker.app/static/HighlightDisplay-a15e8d274f6896238ea4a649f11e1113.webp'
 };
 
 const es_MetaData = {
   'title': 'IG Tracker | La App para monitorizar perfiles de Instagram 📱😍✅',
   'description':'🥇 Una app para analizar Perfiles de Instagram y Descargar Publicaciones y Fotos de Perfil sin autenticarse.',
   'url':'https://igtracker.app/es/',
-  'highLightImage':'https://igtracker.app/static/HighlightDisplay-5f67cec88a90dba7e7268e0aea702373.png',
-  'keywords':'ig tracker,instagram tracker,seguidores instagram app,descargar publicaciones instagram,publicaciones,descargar,perfil de instagram,foto instagram,imagen instagram,unfollow,app,instagram,ig,tracker'
+  'highLightImage':'https://igtracker.app/static/HighlightDisplay-a15e8d274f6896238ea4a649f11e1113.webp'
 };
 
 
@@ -55,13 +53,14 @@ function SEO(props) {
       <meta property="og:type" content="website" />
       <meta property="og:url" content={metaData['url']} />
       <meta property="og:site_name" content={metaData['title']} />
-      <meta property="og:image" content="https://igtracker.app/static/icon-blank-c444e53bf31faf0290b0e25665425322.jpg"/>
-      <meta property="og:image:secure_url" content="https://igtracker.app/static/icon-blank-c444e53bf31faf0290b0e25665425322.jpg"/>
+      <meta property="og:image" content="https://igtracker.app/static/icon-blank-bbd86f4ed4b11acecc49b5b6b4175ff1.webp"/>
+      <meta property="og:image:secure_url" content="https://igtracker.app/static/icon-blank-bbd86f4ed4b11acecc49b5b6b4175ff1.webp"/>
       <meta property="twitter:card" content="summary_large_image"/>
       <meta property="twitter:title" content={metaData['title']}/>
       <meta property="twitter:description" content={metaData['description']}/>
       <meta property="twitter:image" content={metaData['highLightImage']}/>
       <meta property="lang" content={props.locale}/>
+      <meta name="theme-color" content="#ee77a7"/>
     </Helmet>
   );
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Icon from '../assets/icon-blank.jpg'
+import Icon from '../assets/icon-blank.webp'
 import PlayStore from "./PlayStore"
 
 class Navbar extends Component {

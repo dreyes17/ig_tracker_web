@@ -13,7 +13,7 @@ class CapturesCarousel extends Component {
     M.Materialbox.init(materialBoxed);
     var tabs = document.querySelectorAll('.tabs');
     M.Tabs.init(tabs, {"onShow":(e) => this._onTabChange(e, M)}); 
-    window.addEventListener("resize", () => this._updateDimensions(M));
+    window.addEventListener("resize", () => this._updateDimensions(M), {passive:true});
     
   }
 

@@ -12,8 +12,8 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" />
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rancho" />
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rancho&display=swap" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet" />
       <title>IG Tracker</title>
           {props.headComponents}
       </head>
