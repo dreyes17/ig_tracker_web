@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{EDuE:function(e,n,t){},RXBc:function(e,n,t){"use strict";t.r(n);var i=t("q1tI"),o=t.n(i),a=(t("i8i4"),t("EDuE"),t("3moH")),u=t("0b+E");document.title="IG Tracker",document.description="Esto es lo que se va a ver en Google",u.a.initialize("UA-172753539-1"),u.a.pageview("/");n.default=function(){return o.a.createElement(a.default,null)}}}]);
-//# sourceMappingURL=component---src-pages-index-js-746d81072ea441954797.js.map
